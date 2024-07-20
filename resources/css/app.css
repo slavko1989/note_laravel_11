@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.note-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-note-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.new-note-btn:hover {
+    background-color: #0056b3;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.note {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-body {
+    margin-bottom: 10px;
+}
+
+.note-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.note-edit-button,
+.note-delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.note-edit-button {
+    background-color: #28a745;
+}
+
+.note-edit-button:hover {
+    background-color: #218838;
+}
+
+.note-delete-button {
+    background-color: #dc3545;
+}
+
+.note-delete-button:hover {
+    background-color: #c82333;
+}
+
+.note-container.single-note {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note-container.single-note h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+}
+
+.note-body {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.note-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.note-cancel-bitton,
+.note-submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.note-cancel-bitton {
+    background-color: #6c757d;
+}
+
+.note-cancel-bitton:hover {
+    background-color: #5a6268;
+}
+
+.note-submit-button {
+    background-color: #007bff;
+}
+
+.note-submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Success Message Styles */
+.success-message {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
